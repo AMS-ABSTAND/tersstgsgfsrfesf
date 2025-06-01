@@ -1,0 +1,287 @@
+{
+    "avoidPlayerState": "Server Change",
+    "mapToState": {
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Oryxs Castle",
+        "Realm of the Mad God": "RealmTP",
+        "Toxic Sewers": "Sewer"
+    },
+    "name": "DG Toxic Sewers",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.5,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 4.0,
+                    "point": {
+                        "x": 1647.7232666015625,
+                        "y": 1660.3056640625
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "RealmTP",
+            "nextStateName": "RealmSearch",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1647.5,
+                        "y": 1660.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1647.6351318359375,
+                            "y": 1659.11474609375
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "RealmSearch",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1804,
+                    "objectToEnter": [
+                        574
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 17738,
+                    "objectToTarget": [
+                        17735,
+                        44153,
+                        34570,
+                        44151,
+                        34605
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000000.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1647.30908203125,
+                            "y": 1500.09765625
+                        },
+                        {
+                            "x": 1632.7242431640625,
+                            "y": 1590.0791015625
+                        },
+                        {
+                            "x": 1610.3751220703125,
+                            "y": 1587.6368408203125
+                        },
+                        {
+                            "x": 1593.57373046875,
+                            "y": 1586.8907470703125
+                        },
+                        {
+                            "x": 1596.510009765625,
+                            "y": 1563.6138916015625
+                        },
+                        {
+                            "x": 1597.0703125,
+                            "y": 1542.7415771484375
+                        },
+                        {
+                            "x": 1628.431884765625,
+                            "y": 1557.661376953125
+                        },
+                        {
+                            "x": 1631.748291015625,
+                            "y": 1529.874267578125
+                        },
+                        {
+                            "x": 1650.888427734375,
+                            "y": 1510.1815185546875
+                        },
+                        {
+                            "x": 1650.6812744140625,
+                            "y": 1490.401611328125
+                        },
+                        {
+                            "x": 1633.83349609375,
+                            "y": 1470.3482666015625
+                        },
+                        {
+                            "x": 1618.916259765625,
+                            "y": 1442.1199951171875
+                        },
+                        {
+                            "x": 1642.989990234375,
+                            "y": 1413.132568359375
+                        },
+                        {
+                            "x": 1668.8221435546875,
+                            "y": 1404.2161865234375
+                        },
+                        {
+                            "x": 1669.3922119140625,
+                            "y": 1437.898193359375
+                        },
+                        {
+                            "x": 1655.0574951171875,
+                            "y": 1465.3162841796875
+                        },
+                        {
+                            "x": 1652.7861328125,
+                            "y": 1494.6370849609375
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Sewer",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 46416,
+                    "objectToTarget": [
+                        46418,
+                        14916,
+                        46417,
+                        29029,
+                        383,
+                        29023,
+                        46404,
+                        29016,
+                        46414,
+                        46419,
+                        46416
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29013,
+                    "objectToTarget": [
+                        29013
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Oryxs Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

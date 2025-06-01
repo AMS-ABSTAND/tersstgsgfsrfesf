@@ -1,0 +1,402 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "RealmTP",
+        "Undead Lair": "Undead"
+    },
+    "name": "DG Undead Lair",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "RealmTP",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 5.0,
+                    "point": {
+                        "x": 1436.5,
+                        "y": 1200.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "RealmTP",
+            "nextStateName": "RealmSearch",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1436.5,
+                        "y": 1200.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1436.5,
+                            "y": 1200.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "RealmSearch",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1818,
+                    "objectToEnter": [
+                        1818
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49896,
+                    "objectToTarget": [
+                        49896,
+                        53000
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 6.0,
+                    "points": [
+                        {
+                            "x": 1486.71875,
+                            "y": 1202.025513
+                        },
+                        {
+                            "x": 1507.869995,
+                            "y": 1197.838013
+                        },
+                        {
+                            "x": 1522.847778,
+                            "y": 1196.877197
+                        },
+                        {
+                            "x": 1531.868042,
+                            "y": 1181.953857
+                        },
+                        {
+                            "x": 1544.621948,
+                            "y": 1172.794189
+                        },
+                        {
+                            "x": 1569.066284,
+                            "y": 1171.391113
+                        },
+                        {
+                            "x": 1576.047607,
+                            "y": 1157.347412
+                        },
+                        {
+                            "x": 1570.72998,
+                            "y": 1138.820312
+                        },
+                        {
+                            "x": 1562.169067,
+                            "y": 1127.860352
+                        },
+                        {
+                            "x": 1544.862549,
+                            "y": 1127.680542
+                        },
+                        {
+                            "x": 1528.201904,
+                            "y": 1126.397705
+                        },
+                        {
+                            "x": 1552.161865,
+                            "y": 1156.099609
+                        },
+                        {
+                            "x": 1510.74646,
+                            "y": 1173.096558
+                        },
+                        {
+                            "x": 1469.622681,
+                            "y": 1173.861938
+                        },
+                        {
+                            "x": 1509.544189,
+                            "y": 1145.177734
+                        },
+                        {
+                            "x": 1511.182373,
+                            "y": 1104.646851
+                        },
+                        {
+                            "x": 1482.276611,
+                            "y": 1098.282959
+                        },
+                        {
+                            "x": 1481.457397,
+                            "y": 1144.633911
+                        },
+                        {
+                            "x": 1460.13855,
+                            "y": 1074.78479
+                        },
+                        {
+                            "x": 1434.35083,
+                            "y": 1088.940918
+                        },
+                        {
+                            "x": 1439.879883,
+                            "y": 1120.52002
+                        },
+                        {
+                            "x": 1438.811279,
+                            "y": 1146.831177
+                        },
+                        {
+                            "x": 1433.220947,
+                            "y": 1179.319458
+                        },
+                        {
+                            "x": 1405.674072,
+                            "y": 1158.362915
+                        },
+                        {
+                            "x": 1386.981934,
+                            "y": 1169.29187
+                        },
+                        {
+                            "x": 1392.829712,
+                            "y": 1185.957642
+                        },
+                        {
+                            "x": 1399.030029,
+                            "y": 1205.319946
+                        },
+                        {
+                            "x": 1387.949951,
+                            "y": 1233.24646
+                        },
+                        {
+                            "x": 1392.066284,
+                            "y": 1259.880249
+                        },
+                        {
+                            "x": 1390.194458,
+                            "y": 1288.010498
+                        },
+                        {
+                            "x": 1400.052979,
+                            "y": 1310.340942
+                        },
+                        {
+                            "x": 1396.01,
+                            "y": 1337.577271
+                        },
+                        {
+                            "x": 1394.874146,
+                            "y": 1363.890503
+                        },
+                        {
+                            "x": 1421.425659,
+                            "y": 1362.829956
+                        },
+                        {
+                            "x": 1422.74585,
+                            "y": 1338.047729
+                        },
+                        {
+                            "x": 1426.352539,
+                            "y": 1311.835205
+                        },
+                        {
+                            "x": 1417.022705,
+                            "y": 1286.767456
+                        },
+                        {
+                            "x": 1418.638184,
+                            "y": 1256.127197
+                        },
+                        {
+                            "x": 1418.286987,
+                            "y": 1254.920044
+                        },
+                        {
+                            "x": 1421.540894,
+                            "y": 1218.936768
+                        },
+                        {
+                            "x": 1470.247314,
+                            "y": 1227.897583
+                        },
+                        {
+                            "x": 1439.849976,
+                            "y": 1252.453125
+                        },
+                        {
+                            "x": 1472.029785,
+                            "y": 1277.409424
+                        },
+                        {
+                            "x": 1434.851807,
+                            "y": 1290.480103
+                        },
+                        {
+                            "x": 1475.472534,
+                            "y": 1320.572876
+                        },
+                        {
+                            "x": 1441.710938,
+                            "y": 1336.583374
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": false
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Undead",
+            "nextStateName": "Realm Search",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29773,
+                    "objectToTarget": [
+                        29773
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 5571,
+                    "objectToTarget": [
+                        3499,
+                        5571,
+                        3501,
+                        3502,
+                        3500,
+                        3503,
+                        47414,
+                        18376,
+                        3498,
+                        3472,
+                        3504,
+                        3506,
+                        3505,
+                        29207,
+                        18377,
+                        8813,
+                        18378
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 5571,
+                    "objectToTarget": [
+                        3499,
+                        5571,
+                        3501,
+                        3502,
+                        3500,
+                        3503,
+                        47414,
+                        18376,
+                        3498,
+                        3472,
+                        3504,
+                        3506,
+                        3505,
+                        29207,
+                        18377,
+                        8813,
+                        18378
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 2.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

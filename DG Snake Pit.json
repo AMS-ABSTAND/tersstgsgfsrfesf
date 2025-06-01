@@ -1,0 +1,357 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "RealmTP",
+        "Snake Pit": "Snake Pit"
+    },
+    "name": "DG Snake Pit",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 5.0,
+                    "point": {
+                        "x": 1992.586182,
+                        "y": 1254.445068
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "RealmTP",
+            "nextStateName": "RealmSearch",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1992.5,
+                        "y": 1254.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1992.586182856433,
+                            "y": 1254.4450685904762
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "RealmSearch",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1816,
+                    "objectToEnter": [
+                        1816
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49340,
+                    "objectToTarget": [
+                        49340
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1994.54,
+                            "y": 1252.42
+                        },
+                        {
+                            "x": 1943.38,
+                            "y": 1202.85
+                        },
+                        {
+                            "x": 1929.4,
+                            "y": 1137.34
+                        },
+                        {
+                            "x": 1831.64,
+                            "y": 1057.28
+                        },
+                        {
+                            "x": 1816.18,
+                            "y": 993.414
+                        },
+                        {
+                            "x": 1889.17,
+                            "y": 995.262
+                        },
+                        {
+                            "x": 1926.78,
+                            "y": 924.408
+                        },
+                        {
+                            "x": 1985.48,
+                            "y": 958.131
+                        },
+                        {
+                            "x": 1969.28,
+                            "y": 1024.29
+                        },
+                        {
+                            "x": 1885.55,
+                            "y": 1054.86
+                        },
+                        {
+                            "x": 1915.59,
+                            "y": 1133.42
+                        },
+                        {
+                            "x": 1972.81,
+                            "y": 1210.47
+                        },
+                        {
+                            "x": 1982.14,
+                            "y": 1291.29
+                        },
+                        {
+                            "x": 1921.66,
+                            "y": 1315.93
+                        },
+                        {
+                            "x": 1876.59,
+                            "y": 1355.12
+                        },
+                        {
+                            "x": 1897.27,
+                            "y": 1420.22
+                        },
+                        {
+                            "x": 1898.57,
+                            "y": 1467.3
+                        },
+                        {
+                            "x": 1933.93,
+                            "y": 1479.87
+                        },
+                        {
+                            "x": 1964.81,
+                            "y": 1562.27
+                        },
+                        {
+                            "x": 1991.58,
+                            "y": 1570.74
+                        },
+                        {
+                            "x": 2010.06,
+                            "y": 1675.81
+                        },
+                        {
+                            "x": 1991.5,
+                            "y": 1739.08
+                        },
+                        {
+                            "x": 1942.1,
+                            "y": 1761.28
+                        },
+                        {
+                            "x": 1860.57,
+                            "y": 1723.92
+                        },
+                        {
+                            "x": 1746.75,
+                            "y": 1652.61
+                        },
+                        {
+                            "x": 1705.87,
+                            "y": 1681.59
+                        },
+                        {
+                            "x": 1652.62,
+                            "y": 1659.12
+                        },
+                        {
+                            "x": 1574.76,
+                            "y": 1704.92
+                        },
+                        {
+                            "x": 1513.78,
+                            "y": 1742.08
+                        },
+                        {
+                            "x": 1504.01,
+                            "y": 1709.58
+                        },
+                        {
+                            "x": 1635.68,
+                            "y": 1654.03
+                        },
+                        {
+                            "x": 1748.82,
+                            "y": 1647.6
+                        },
+                        {
+                            "x": 1946.74,
+                            "y": 1756.09
+                        },
+                        {
+                            "x": 1994.95,
+                            "y": 1721.75
+                        },
+                        {
+                            "x": 1986.86,
+                            "y": 1575.63
+                        },
+                        {
+                            "x": 1940.27,
+                            "y": 1524.09
+                        },
+                        {
+                            "x": 1892.14,
+                            "y": 1427.14
+                        },
+                        {
+                            "x": 1880.75,
+                            "y": 1336.81
+                        },
+                        {
+                            "x": 1948.31,
+                            "y": 1294.58
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Snake Pit",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 2327,
+                    "objectToTarget": [
+                        2327,
+                        3623,
+                        3622,
+                        51990,
+                        29773,
+                        29207,
+                        18377,
+                        18376,
+                        18378
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

@@ -1,0 +1,1070 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Manor of the Immortals": "Manor",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "Search Deach Church 1"
+    },
+    "name": "DG Manor",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1688.5,
+                        "y": 1275.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Deach Church 1",
+            "nextStateName": "Search Deach Church 1",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1688.5,
+                        "y": 1275.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1688.5,
+                            "y": 1275.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1685.0,
+                        "y": 1325.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Deach Church 1",
+            "nextStateName": "Proceed to Deach Church 2",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1849,
+                    "objectToEnter": [
+                        1849
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49628,
+                    "objectToTarget": [
+                        49628,
+                        15567,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1765.0,
+                            "y": 1274.0
+                        },
+                        {
+                            "x": 1764.0,
+                            "y": 1245.0
+                        },
+                        {
+                            "x": 1757.0,
+                            "y": 1227.0
+                        },
+                        {
+                            "x": 1768.0,
+                            "y": 1208.0
+                        },
+                        {
+                            "x": 1768.0,
+                            "y": 1187.0
+                        },
+                        {
+                            "x": 1753.0,
+                            "y": 1180.0
+                        },
+                        {
+                            "x": 1733.0,
+                            "y": 1180.0
+                        },
+                        {
+                            "x": 1716.0,
+                            "y": 1180.0
+                        },
+                        {
+                            "x": 1713.0,
+                            "y": 1161.0
+                        },
+                        {
+                            "x": 1695.0,
+                            "y": 1153.0
+                        },
+                        {
+                            "x": 1671.0,
+                            "y": 1163.0
+                        },
+                        {
+                            "x": 1665.0,
+                            "y": 1180.0
+                        },
+                        {
+                            "x": 1648.0,
+                            "y": 1182.0
+                        },
+                        {
+                            "x": 1634.0,
+                            "y": 1185.0
+                        },
+                        {
+                            "x": 1622.0,
+                            "y": 1198.0
+                        },
+                        {
+                            "x": 1627.0,
+                            "y": 1217.0
+                        },
+                        {
+                            "x": 1638.0,
+                            "y": 1232.0
+                        },
+                        {
+                            "x": 1629.0,
+                            "y": 1248.0
+                        },
+                        {
+                            "x": 1615.0,
+                            "y": 1263.0
+                        },
+                        {
+                            "x": 1589.0,
+                            "y": 1263.0
+                        },
+                        {
+                            "x": 1578.0,
+                            "y": 1278.0
+                        },
+                        {
+                            "x": 1576.0,
+                            "y": 1291.0
+                        },
+                        {
+                            "x": 1590.0,
+                            "y": 1308.0
+                        },
+                        {
+                            "x": 1591.0,
+                            "y": 1317.0
+                        },
+                        {
+                            "x": 1577.0,
+                            "y": 1340.0
+                        },
+                        {
+                            "x": 1587.0,
+                            "y": 1362.0
+                        },
+                        {
+                            "x": 1604.0,
+                            "y": 1362.0
+                        },
+                        {
+                            "x": 1619.0,
+                            "y": 1354.0
+                        },
+                        {
+                            "x": 1630.0,
+                            "y": 1335.0
+                        },
+                        {
+                            "x": 1658.0,
+                            "y": 1334.0
+                        },
+                        {
+                            "x": 1676.0,
+                            "y": 1342.0
+                        },
+                        {
+                            "x": 1688.0,
+                            "y": 1359.0
+                        },
+                        {
+                            "x": 1711.0,
+                            "y": 1360.0
+                        },
+                        {
+                            "x": 1717.0,
+                            "y": 1346.0
+                        },
+                        {
+                            "x": 1745.0,
+                            "y": 1344.0
+                        },
+                        {
+                            "x": 1767.0,
+                            "y": 1341.0
+                        },
+                        {
+                            "x": 1776.0,
+                            "y": 1329.0
+                        },
+                        {
+                            "x": 1778.0,
+                            "y": 1313.0
+                        },
+                        {
+                            "x": 1767.0,
+                            "y": 1291.0
+                        },
+                        {
+                            "x": 1743.0,
+                            "y": 1268.0
+                        },
+                        {
+                            "x": 1749.0,
+                            "y": 1239.0
+                        },
+                        {
+                            "x": 1745.0,
+                            "y": 1205.0
+                        },
+                        {
+                            "x": 1710.0,
+                            "y": 1211.0
+                        },
+                        {
+                            "x": 1693.0,
+                            "y": 1211.0
+                        },
+                        {
+                            "x": 1679.0,
+                            "y": 1198.0
+                        },
+                        {
+                            "x": 1651.0,
+                            "y": 1219.0
+                        },
+                        {
+                            "x": 1673.0,
+                            "y": 1235.0
+                        },
+                        {
+                            "x": 1715.0,
+                            "y": 1236.0
+                        },
+                        {
+                            "x": 1715.0,
+                            "y": 1260.0
+                        },
+                        {
+                            "x": 1653.0,
+                            "y": 1260.0
+                        },
+                        {
+                            "x": 1631.0,
+                            "y": 1279.0
+                        },
+                        {
+                            "x": 1604.0,
+                            "y": 1289.0
+                        },
+                        {
+                            "x": 1606.0,
+                            "y": 1308.0
+                        },
+                        {
+                            "x": 1607.0,
+                            "y": 1338.0
+                        },
+                        {
+                            "x": 1637.0,
+                            "y": 1308.0
+                        },
+                        {
+                            "x": 1663.0,
+                            "y": 1283.0
+                        },
+                        {
+                            "x": 1664.0,
+                            "y": 1311.0
+                        },
+                        {
+                            "x": 1679.0,
+                            "y": 1297.0
+                        },
+                        {
+                            "x": 1740.0,
+                            "y": 1298.0
+                        },
+                        {
+                            "x": 1750.0,
+                            "y": 1326.0
+                        },
+                        {
+                            "x": 1685.0,
+                            "y": 1325.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1341.5,
+                        "y": 1391.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Dead Church 2",
+            "nextStateName": "Search Dead Church 2",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1341.5,
+                        "y": 1391.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1341.5,
+                            "y": 1391.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1321.0,
+                        "y": 1329.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Dead Church 2",
+            "nextStateName": "Proceed to Dead Church 3",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1849,
+                    "objectToEnter": [
+                        1849
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49628,
+                    "objectToTarget": [
+                        49628,
+                        15567,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1341.0,
+                            "y": 1246.0
+                        },
+                        {
+                            "x": 1354.0,
+                            "y": 1234.0
+                        },
+                        {
+                            "x": 1374.0,
+                            "y": 1236.0
+                        },
+                        {
+                            "x": 1380.0,
+                            "y": 1253.0
+                        },
+                        {
+                            "x": 1382.0,
+                            "y": 1267.0
+                        },
+                        {
+                            "x": 1360.0,
+                            "y": 1265.0
+                        },
+                        {
+                            "x": 1361.0,
+                            "y": 1303.0
+                        },
+                        {
+                            "x": 1378.0,
+                            "y": 1303.0
+                        },
+                        {
+                            "x": 1385.0,
+                            "y": 1322.0
+                        },
+                        {
+                            "x": 1362.0,
+                            "y": 1340.0
+                        },
+                        {
+                            "x": 1384.0,
+                            "y": 1362.0
+                        },
+                        {
+                            "x": 1364.0,
+                            "y": 1378.0
+                        },
+                        {
+                            "x": 1424.0,
+                            "y": 1379.0
+                        },
+                        {
+                            "x": 1442.0,
+                            "y": 1404.0
+                        },
+                        {
+                            "x": 1472.0,
+                            "y": 1404.0
+                        },
+                        {
+                            "x": 1478.0,
+                            "y": 1428.0
+                        },
+                        {
+                            "x": 1468.0,
+                            "y": 1454.0
+                        },
+                        {
+                            "x": 1482.0,
+                            "y": 1477.0
+                        },
+                        {
+                            "x": 1463.0,
+                            "y": 1501.0
+                        },
+                        {
+                            "x": 1440.0,
+                            "y": 1499.0
+                        },
+                        {
+                            "x": 1422.0,
+                            "y": 1473.0
+                        },
+                        {
+                            "x": 1455.0,
+                            "y": 1474.0
+                        },
+                        {
+                            "x": 1450.0,
+                            "y": 1428.0
+                        },
+                        {
+                            "x": 1427.0,
+                            "y": 1427.0
+                        },
+                        {
+                            "x": 1406.0,
+                            "y": 1406.0
+                        },
+                        {
+                            "x": 1359.0,
+                            "y": 1407.0
+                        },
+                        {
+                            "x": 1397.0,
+                            "y": 1446.0
+                        },
+                        {
+                            "x": 1397.0,
+                            "y": 1462.0
+                        },
+                        {
+                            "x": 1361.0,
+                            "y": 1445.0
+                        },
+                        {
+                            "x": 1334.0,
+                            "y": 1445.0
+                        },
+                        {
+                            "x": 1326.0,
+                            "y": 1467.0
+                        },
+                        {
+                            "x": 1314.0,
+                            "y": 1472.0
+                        },
+                        {
+                            "x": 1298.0,
+                            "y": 1471.0
+                        },
+                        {
+                            "x": 1287.0,
+                            "y": 1451.0
+                        },
+                        {
+                            "x": 1300.0,
+                            "y": 1433.0
+                        },
+                        {
+                            "x": 1299.0,
+                            "y": 1412.0
+                        },
+                        {
+                            "x": 1298.0,
+                            "y": 1402.0
+                        },
+                        {
+                            "x": 1289.0,
+                            "y": 1389.0
+                        },
+                        {
+                            "x": 1301.0,
+                            "y": 1374.0
+                        },
+                        {
+                            "x": 1303.0,
+                            "y": 1356.0
+                        },
+                        {
+                            "x": 1328.0,
+                            "y": 1421.0
+                        },
+                        {
+                            "x": 1340.0,
+                            "y": 1421.0
+                        },
+                        {
+                            "x": 1349.0,
+                            "y": 1412.0
+                        },
+                        {
+                            "x": 1334.0,
+                            "y": 1379.0
+                        },
+                        {
+                            "x": 1319.0,
+                            "y": 1355.0
+                        },
+                        {
+                            "x": 1299.0,
+                            "y": 1333.0
+                        },
+                        {
+                            "x": 1301.0,
+                            "y": 1291.0
+                        },
+                        {
+                            "x": 1284.0,
+                            "y": 1277.0
+                        },
+                        {
+                            "x": 1263.0,
+                            "y": 1275.0
+                        },
+                        {
+                            "x": 1244.0,
+                            "y": 1277.0
+                        },
+                        {
+                            "x": 1237.0,
+                            "y": 1298.0
+                        },
+                        {
+                            "x": 1226.0,
+                            "y": 1308.0
+                        },
+                        {
+                            "x": 1203.0,
+                            "y": 1308.0
+                        },
+                        {
+                            "x": 1192.0,
+                            "y": 1292.0
+                        },
+                        {
+                            "x": 1200.0,
+                            "y": 1275.0
+                        },
+                        {
+                            "x": 1208.0,
+                            "y": 1260.0
+                        },
+                        {
+                            "x": 1199.0,
+                            "y": 1244.0
+                        },
+                        {
+                            "x": 1192.0,
+                            "y": 1229.0
+                        },
+                        {
+                            "x": 1208.0,
+                            "y": 1210.0
+                        },
+                        {
+                            "x": 1234.0,
+                            "y": 1210.0
+                        },
+                        {
+                            "x": 1220.0,
+                            "y": 1235.0
+                        },
+                        {
+                            "x": 1270.0,
+                            "y": 1235.0
+                        },
+                        {
+                            "x": 1285.0,
+                            "y": 1253.0
+                        },
+                        {
+                            "x": 1306.0,
+                            "y": 1267.0
+                        },
+                        {
+                            "x": 1318.0,
+                            "y": 1267.0
+                        },
+                        {
+                            "x": 1321.0,
+                            "y": 1329.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1020.5,
+                        "y": 1075.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Deach Church  3",
+            "nextStateName": "Search Deach Church  3",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1020.5,
+                        "y": 1075.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1020.5,
+                            "y": 1075.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1023.0,
+                        "y": 1164.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Deach Church 3",
+            "nextStateName": "Proceed to Deach Church  1",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1849,
+                    "objectToEnter": [
+                        1849
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49628,
+                    "objectToTarget": [
+                        49628,
+                        15567,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1133.0,
+                            "y": 1075.0
+                        },
+                        {
+                            "x": 1144.0,
+                            "y": 1064.0
+                        },
+                        {
+                            "x": 1138.0,
+                            "y": 1052.0
+                        },
+                        {
+                            "x": 1126.0,
+                            "y": 1041.0
+                        },
+                        {
+                            "x": 1100.0,
+                            "y": 1043.0
+                        },
+                        {
+                            "x": 1086.0,
+                            "y": 1024.0
+                        },
+                        {
+                            "x": 1070.0,
+                            "y": 1011.0
+                        },
+                        {
+                            "x": 1048.0,
+                            "y": 1013.0
+                        },
+                        {
+                            "x": 1029.0,
+                            "y": 988.0
+                        },
+                        {
+                            "x": 1012.0,
+                            "y": 991.0
+                        },
+                        {
+                            "x": 988.0,
+                            "y": 1016.0
+                        },
+                        {
+                            "x": 964.0,
+                            "y": 1016.0
+                        },
+                        {
+                            "x": 945.0,
+                            "y": 1036.0
+                        },
+                        {
+                            "x": 962.0,
+                            "y": 1057.0
+                        },
+                        {
+                            "x": 976.0,
+                            "y": 1041.0
+                        },
+                        {
+                            "x": 1000.0,
+                            "y": 1040.0
+                        },
+                        {
+                            "x": 1022.0,
+                            "y": 1018.0
+                        },
+                        {
+                            "x": 1052.0,
+                            "y": 1035.0
+                        },
+                        {
+                            "x": 1065.0,
+                            "y": 1035.0
+                        },
+                        {
+                            "x": 1066.0,
+                            "y": 1054.0
+                        },
+                        {
+                            "x": 1019.0,
+                            "y": 1054.0
+                        },
+                        {
+                            "x": 983.0,
+                            "y": 1078.0
+                        },
+                        {
+                            "x": 969.0,
+                            "y": 1086.0
+                        },
+                        {
+                            "x": 986.0,
+                            "y": 1104.0
+                        },
+                        {
+                            "x": 986.0,
+                            "y": 1164.0
+                        },
+                        {
+                            "x": 1008.0,
+                            "y": 1186.0
+                        },
+                        {
+                            "x": 1031.0,
+                            "y": 1193.0
+                        },
+                        {
+                            "x": 1046.0,
+                            "y": 1178.0
+                        },
+                        {
+                            "x": 1044.0,
+                            "y": 1155.0
+                        },
+                        {
+                            "x": 1034.0,
+                            "y": 1144.0
+                        },
+                        {
+                            "x": 1035.0,
+                            "y": 1128.0
+                        },
+                        {
+                            "x": 1053.0,
+                            "y": 1111.0
+                        },
+                        {
+                            "x": 1083.0,
+                            "y": 1111.0
+                        },
+                        {
+                            "x": 1089.0,
+                            "y": 1095.0
+                        },
+                        {
+                            "x": 1007.0,
+                            "y": 1094.0
+                        },
+                        {
+                            "x": 1008.0,
+                            "y": 1143.0
+                        },
+                        {
+                            "x": 1023.0,
+                            "y": 1164.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Manor",
+            "nextStateName": "Proceed to Dead Church 1",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 5920,
+                    "objectToTarget": [
+                        5920,
+                        47414,
+                        18376,
+                        5922,
+                        8813,
+                        18378,
+                        5943,
+                        29207,
+                        18377,
+                        6201
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29773,
+                    "objectToTarget": [
+                        5920,
+                        5922,
+                        51990,
+                        5943,
+                        29773,
+                        29207,
+                        18377,
+                        18376,
+                        47414,
+                        18378,
+                        8813
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "Proceed to Dead Church 1",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

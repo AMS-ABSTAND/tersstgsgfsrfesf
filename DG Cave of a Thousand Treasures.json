@@ -1,0 +1,935 @@
+{
+    "avoidPlayerState": "avoid",
+    "mapToState": {
+        "Cave of A Thousand Treasures": "Cave",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "Proceed to Shipwreck Cove 1"
+    },
+    "name": "DG Cave of a Thousand Treasures",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "Proceed to Shipwreck Cove 1",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1851.5,
+                        "y": 1249.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Shipwreck Cove 1",
+            "nextStateName": "Search Shipwreck Cove 1",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1851.5,
+                        "y": 1249.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1851.5,
+                            "y": 1249.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1843.0,
+                        "y": 1298.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Shipwreck Cove 1",
+            "nextStateName": "Proceed to Shipwreck Cove 2",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 24110,
+                    "objectToEnter": [
+                        24110
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49901,
+                    "objectToTarget": [
+                        15567,
+                        49901,
+                        53001,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1950.0,
+                            "y": 1250.0
+                        },
+                        {
+                            "x": 1940.0,
+                            "y": 1237.0
+                        },
+                        {
+                            "x": 1910.0,
+                            "y": 1236.0
+                        },
+                        {
+                            "x": 1899.0,
+                            "y": 1219.0
+                        },
+                        {
+                            "x": 1896.0,
+                            "y": 1193.0
+                        },
+                        {
+                            "x": 1906.0,
+                            "y": 1178.0
+                        },
+                        {
+                            "x": 1907.0,
+                            "y": 1162.0
+                        },
+                        {
+                            "x": 1898.0,
+                            "y": 1155.0
+                        },
+                        {
+                            "x": 1877.0,
+                            "y": 1155.0
+                        },
+                        {
+                            "x": 1864.0,
+                            "y": 1156.0
+                        },
+                        {
+                            "x": 1855.0,
+                            "y": 1137.0
+                        },
+                        {
+                            "x": 1844.0,
+                            "y": 1126.0
+                        },
+                        {
+                            "x": 1829.0,
+                            "y": 1126.0
+                        },
+                        {
+                            "x": 1818.0,
+                            "y": 1137.0
+                        },
+                        {
+                            "x": 1811.0,
+                            "y": 1150.0
+                        },
+                        {
+                            "x": 1802.0,
+                            "y": 1158.0
+                        },
+                        {
+                            "x": 1779.0,
+                            "y": 1158.0
+                        },
+                        {
+                            "x": 1767.0,
+                            "y": 1170.0
+                        },
+                        {
+                            "x": 1768.0,
+                            "y": 1183.0
+                        },
+                        {
+                            "x": 1784.0,
+                            "y": 1199.0
+                        },
+                        {
+                            "x": 1799.0,
+                            "y": 1186.0
+                        },
+                        {
+                            "x": 1811.0,
+                            "y": 1186.0
+                        },
+                        {
+                            "x": 1837.0,
+                            "y": 1160.0
+                        },
+                        {
+                            "x": 1861.0,
+                            "y": 1184.0
+                        },
+                        {
+                            "x": 1873.0,
+                            "y": 1184.0
+                        },
+                        {
+                            "x": 1873.0,
+                            "y": 1221.0
+                        },
+                        {
+                            "x": 1850.0,
+                            "y": 1221.0
+                        },
+                        {
+                            "x": 1832.0,
+                            "y": 1202.0
+                        },
+                        {
+                            "x": 1773.0,
+                            "y": 1226.0
+                        },
+                        {
+                            "x": 1780.0,
+                            "y": 1257.0
+                        },
+                        {
+                            "x": 1779.0,
+                            "y": 1280.0
+                        },
+                        {
+                            "x": 1788.0,
+                            "y": 1295.0
+                        },
+                        {
+                            "x": 1788.0,
+                            "y": 1324.0
+                        },
+                        {
+                            "x": 1787.0,
+                            "y": 1357.0
+                        },
+                        {
+                            "x": 1802.0,
+                            "y": 1361.0
+                        },
+                        {
+                            "x": 1819.0,
+                            "y": 1343.0
+                        },
+                        {
+                            "x": 1832.0,
+                            "y": 1334.0
+                        },
+                        {
+                            "x": 1848.0,
+                            "y": 1336.0
+                        },
+                        {
+                            "x": 1862.0,
+                            "y": 1320.0
+                        },
+                        {
+                            "x": 1873.0,
+                            "y": 1305.0
+                        },
+                        {
+                            "x": 1899.0,
+                            "y": 1306.0
+                        },
+                        {
+                            "x": 1916.0,
+                            "y": 1289.0
+                        },
+                        {
+                            "x": 1928.0,
+                            "y": 1275.0
+                        },
+                        {
+                            "x": 1864.0,
+                            "y": 1275.0
+                        },
+                        {
+                            "x": 1833.0,
+                            "y": 1276.0
+                        },
+                        {
+                            "x": 1825.0,
+                            "y": 1235.0
+                        },
+                        {
+                            "x": 1804.0,
+                            "y": 1250.0
+                        },
+                        {
+                            "x": 1804.0,
+                            "y": 1278.0
+                        },
+                        {
+                            "x": 1809.0,
+                            "y": 1303.0
+                        },
+                        {
+                            "x": 1811.0,
+                            "y": 1318.0
+                        },
+                        {
+                            "x": 1843.0,
+                            "y": 1298.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1864.5,
+                        "y": 1599.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Shipwreck Cove 2",
+            "nextStateName": "Search Shipwreck Cove 2",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1864.5,
+                        "y": 1599.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1864.5,
+                            "y": 1599.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1868.0,
+                        "y": 1578.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Shipwreck Cove 2",
+            "nextStateName": "Proceed to Shipwreck Cove 3",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 24110,
+                    "objectToEnter": [
+                        24110
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49901,
+                    "objectToTarget": [
+                        15567,
+                        49901,
+                        53001,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1948.0,
+                            "y": 1599.0
+                        },
+                        {
+                            "x": 1959.0,
+                            "y": 1588.0
+                        },
+                        {
+                            "x": 1944.0,
+                            "y": 1567.0
+                        },
+                        {
+                            "x": 1924.0,
+                            "y": 1571.0
+                        },
+                        {
+                            "x": 1911.0,
+                            "y": 1561.0
+                        },
+                        {
+                            "x": 1897.0,
+                            "y": 1547.0
+                        },
+                        {
+                            "x": 1902.0,
+                            "y": 1521.0
+                        },
+                        {
+                            "x": 1908.0,
+                            "y": 1496.0
+                        },
+                        {
+                            "x": 1895.0,
+                            "y": 1484.0
+                        },
+                        {
+                            "x": 1871.0,
+                            "y": 1495.0
+                        },
+                        {
+                            "x": 1873.0,
+                            "y": 1532.0
+                        },
+                        {
+                            "x": 1821.0,
+                            "y": 1531.0
+                        },
+                        {
+                            "x": 1842.0,
+                            "y": 1557.0
+                        },
+                        {
+                            "x": 1857.0,
+                            "y": 1563.0
+                        },
+                        {
+                            "x": 1833.0,
+                            "y": 1586.0
+                        },
+                        {
+                            "x": 1789.0,
+                            "y": 1549.0
+                        },
+                        {
+                            "x": 1760.0,
+                            "y": 1574.0
+                        },
+                        {
+                            "x": 1733.0,
+                            "y": 1574.0
+                        },
+                        {
+                            "x": 1724.0,
+                            "y": 1586.0
+                        },
+                        {
+                            "x": 1724.0,
+                            "y": 1603.0
+                        },
+                        {
+                            "x": 1735.0,
+                            "y": 1612.0
+                        },
+                        {
+                            "x": 1751.0,
+                            "y": 1600.0
+                        },
+                        {
+                            "x": 1771.0,
+                            "y": 1618.0
+                        },
+                        {
+                            "x": 1790.0,
+                            "y": 1589.0
+                        },
+                        {
+                            "x": 1802.0,
+                            "y": 1602.0
+                        },
+                        {
+                            "x": 1784.0,
+                            "y": 1633.0
+                        },
+                        {
+                            "x": 1819.0,
+                            "y": 1633.0
+                        },
+                        {
+                            "x": 1832.0,
+                            "y": 1611.0
+                        },
+                        {
+                            "x": 1851.0,
+                            "y": 1625.0
+                        },
+                        {
+                            "x": 1830.0,
+                            "y": 1656.0
+                        },
+                        {
+                            "x": 1864.0,
+                            "y": 1661.0
+                        },
+                        {
+                            "x": 1882.0,
+                            "y": 1625.0
+                        },
+                        {
+                            "x": 1910.0,
+                            "y": 1625.0
+                        },
+                        {
+                            "x": 1882.0,
+                            "y": 1692.0
+                        },
+                        {
+                            "x": 1912.0,
+                            "y": 1694.0
+                        },
+                        {
+                            "x": 1926.0,
+                            "y": 1714.0
+                        },
+                        {
+                            "x": 1948.0,
+                            "y": 1718.0
+                        },
+                        {
+                            "x": 1958.0,
+                            "y": 1705.0
+                        },
+                        {
+                            "x": 1947.0,
+                            "y": 1680.0
+                        },
+                        {
+                            "x": 1915.0,
+                            "y": 1684.0
+                        },
+                        {
+                            "x": 1930.0,
+                            "y": 1663.0
+                        },
+                        {
+                            "x": 1943.0,
+                            "y": 1663.0
+                        },
+                        {
+                            "x": 1956.0,
+                            "y": 1647.0
+                        },
+                        {
+                            "x": 1936.0,
+                            "y": 1623.0
+                        },
+                        {
+                            "x": 1889.0,
+                            "y": 1578.0
+                        },
+                        {
+                            "x": 1868.0,
+                            "y": 1578.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 988.5,
+                        "y": 949.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Shipwreck Cove 3",
+            "nextStateName": "Search Shipwreck Cove 3",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 988.5,
+                        "y": 949.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 988.5,
+                            "y": 949.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 949.0,
+                        "y": 981.0
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Shipwreck Cove 3",
+            "nextStateName": "Proceed to Shipwreck Cove 1",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 24110,
+                    "objectToEnter": [
+                        24110
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 49901,
+                    "objectToTarget": [
+                        15567,
+                        49901,
+                        53001,
+                        22029
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1045.0,
+                            "y": 948.0
+                        },
+                        {
+                            "x": 1063.0,
+                            "y": 939.0
+                        },
+                        {
+                            "x": 1085.0,
+                            "y": 939.0
+                        },
+                        {
+                            "x": 1095.0,
+                            "y": 923.0
+                        },
+                        {
+                            "x": 1078.0,
+                            "y": 905.0
+                        },
+                        {
+                            "x": 1071.0,
+                            "y": 897.0
+                        },
+                        {
+                            "x": 1058.0,
+                            "y": 916.0
+                        },
+                        {
+                            "x": 1028.0,
+                            "y": 878.0
+                        },
+                        {
+                            "x": 1028.0,
+                            "y": 925.0
+                        },
+                        {
+                            "x": 999.0,
+                            "y": 925.0
+                        },
+                        {
+                            "x": 999.0,
+                            "y": 894.0
+                        },
+                        {
+                            "x": 973.0,
+                            "y": 899.0
+                        },
+                        {
+                            "x": 973.0,
+                            "y": 929.0
+                        },
+                        {
+                            "x": 956.0,
+                            "y": 914.0
+                        },
+                        {
+                            "x": 941.0,
+                            "y": 931.0
+                        },
+                        {
+                            "x": 922.0,
+                            "y": 931.0
+                        },
+                        {
+                            "x": 914.0,
+                            "y": 920.0
+                        },
+                        {
+                            "x": 900.0,
+                            "y": 937.0
+                        },
+                        {
+                            "x": 901.0,
+                            "y": 965.0
+                        },
+                        {
+                            "x": 905.0,
+                            "y": 993.0
+                        },
+                        {
+                            "x": 898.0,
+                            "y": 1004.0
+                        },
+                        {
+                            "x": 916.0,
+                            "y": 1027.0
+                        },
+                        {
+                            "x": 941.0,
+                            "y": 1028.0
+                        },
+                        {
+                            "x": 956.0,
+                            "y": 1014.0
+                        },
+                        {
+                            "x": 971.0,
+                            "y": 999.0
+                        },
+                        {
+                            "x": 991.0,
+                            "y": 1000.0
+                        },
+                        {
+                            "x": 1012.0,
+                            "y": 977.0
+                        },
+                        {
+                            "x": 972.0,
+                            "y": 975.0
+                        },
+                        {
+                            "x": 956.0,
+                            "y": 951.0
+                        },
+                        {
+                            "x": 925.0,
+                            "y": 951.0
+                        },
+                        {
+                            "x": 925.0,
+                            "y": 1005.0
+                        },
+                        {
+                            "x": 949.0,
+                            "y": 981.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Cave",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 24108,
+                    "objectToTarget": [
+                        24108,
+                        18376,
+                        47414,
+                        29086,
+                        24122,
+                        18377,
+                        18378,
+                        8813,
+                        29245,
+                        29207,
+                        6201
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 24108,
+                    "objectToTarget": [
+                        24108,
+                        51990,
+                        24122,
+                        18377,
+                        29773,
+                        29207,
+                        47414,
+                        18376,
+                        29086,
+                        8813,
+                        29245,
+                        18378
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 3.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "avoid",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

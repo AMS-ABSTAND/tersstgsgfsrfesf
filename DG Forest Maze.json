@@ -1,0 +1,366 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Forest Maze": "Forest Maze",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "RealmTP"
+    },
+    "name": "DG Forest Maze",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 5.0,
+                    "point": {
+                        "x": 605.5,
+                        "y": 1446.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "RealmTP",
+            "nextStateName": "RealmSearch",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 605.5,
+                        "y": 1446.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 605.5,
+                            "y": 1446.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "RealmSearch",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 24372,
+                    "objectToEnter": [
+                        24372
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 44158,
+                    "objectToTarget": [
+                        5724,
+                        44158,
+                        21767,
+                        21836,
+                        1549,
+                        1540,
+                        1732,
+                        21832,
+                        5721,
+                        21768,
+                        21774,
+                        1562,
+                        21775,
+                        2387,
+                        1545,
+                        5722,
+                        21780,
+                        1556,
+                        52993,
+                        21847,
+                        21783,
+                        1559,
+                        2391,
+                        1606,
+                        5718,
+                        2378,
+                        21790,
+                        2389,
+                        21793,
+                        1571,
+                        21862,
+                        5723,
+                        21798,
+                        21810,
+                        2386,
+                        21830,
+                        2384,
+                        52994,
+                        21824,
+                        2375,
+                        21827,
+                        2373,
+                        21843,
+                        1567,
+                        15653,
+                        21882,
+                        29839,
+                        21887,
+                        52990,
+                        52992
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 15.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 624.726746,
+                            "y": 1454.854126
+                        },
+                        {
+                            "x": 618.689697,
+                            "y": 1489.440552
+                        },
+                        {
+                            "x": 625.849976,
+                            "y": 1516.186646
+                        },
+                        {
+                            "x": 635.258301,
+                            "y": 1537.872314
+                        },
+                        {
+                            "x": 633.590027,
+                            "y": 1563.954834
+                        },
+                        {
+                            "x": 639.339966,
+                            "y": 1595.493774
+                        },
+                        {
+                            "x": 641.805542,
+                            "y": 1621.918213
+                        },
+                        {
+                            "x": 646.8726809999999,
+                            "y": 1639.87793
+                        },
+                        {
+                            "x": 674.020874,
+                            "y": 1648.939819
+                        },
+                        {
+                            "x": 676.536438,
+                            "y": 1622.536865
+                        },
+                        {
+                            "x": 667.458496,
+                            "y": 1605.047241
+                        },
+                        {
+                            "x": 661.856201,
+                            "y": 1579.477539
+                        },
+                        {
+                            "x": 656.696838,
+                            "y": 1550.848511
+                        },
+                        {
+                            "x": 657.738525,
+                            "y": 1522.095215
+                        },
+                        {
+                            "x": 648.026733,
+                            "y": 1493.42627
+                        },
+                        {
+                            "x": 652.588867,
+                            "y": 1456.665283
+                        },
+                        {
+                            "x": 652.875977,
+                            "y": 1425.655518
+                        },
+                        {
+                            "x": 651.727173,
+                            "y": 1407.959839
+                        },
+                        {
+                            "x": 659.227783,
+                            "y": 1383.812256
+                        },
+                        {
+                            "x": 658.185913,
+                            "y": 1357.356445
+                        },
+                        {
+                            "x": 648.128906,
+                            "y": 1300.611328
+                        },
+                        {
+                            "x": 644.263184,
+                            "y": 1275.939331
+                        },
+                        {
+                            "x": 636.214844,
+                            "y": 1249.926514
+                        },
+                        {
+                            "x": 620.526917,
+                            "y": 1222.326782
+                        },
+                        {
+                            "x": 600.548096,
+                            "y": 1207.828735
+                        },
+                        {
+                            "x": 574.98938,
+                            "y": 1199.765137
+                        },
+                        {
+                            "x": 591.834106,
+                            "y": 1176.422974
+                        },
+                        {
+                            "x": 620.87384,
+                            "y": 1194.977295
+                        },
+                        {
+                            "x": 647.645752,
+                            "y": 1213.204712
+                        },
+                        {
+                            "x": 665.002747,
+                            "y": 1237.226196
+                        },
+                        {
+                            "x": 677.650269,
+                            "y": 1257.987427
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Forest Maze",
+            "nextStateName": "Exit",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 24162,
+                    "objectToTarget": [
+                        24162
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

@@ -1,0 +1,1281 @@
+{
+    "avoidPlayerState": "SwitchServers",
+    "mapToState": {
+        "Cursed Library": "Library",
+        "Deadwater Docks": "Deadwater Docks",
+        "Ice Cave": "IceCave",
+        "Lair of Draconis": "ActivatePurplePortal",
+        "Mountain Temple": "Mountain Temple",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Oryx's Castle",
+        "Realm of the Mad God": "Realm",
+        "The Inner Sanctum": "InnerSanc"
+    },
+    "name": "DG Tundra Dungeons",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 2.0,
+                    "point": {
+                        "x": 129.74758911132813,
+                        "y": 62.719017028808594
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Nexus",
+            "nextStateName": "SwitchServers",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "SwitchServers",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        false,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        false
+                    ]
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 1.0
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1072.5,
+                        "y": 151.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Realm",
+            "nextStateName": "Realm Search",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1072.5,
+                        "y": 151.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.10000000149011612
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1072.5,
+                            "y": 151.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Realm Search",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45591,
+                    "objectToEnter": [
+                        45591,
+                        1885,
+                        311,
+                        29835,
+                        43862
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [
+                        16935,
+                        16936,
+                        16937,
+                        16938,
+                        16970,
+                        34518
+                    ],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29443,
+                    "objectToTarget": [
+                        9832,
+                        44337,
+                        29443,
+                        21996,
+                        22146,
+                        21997,
+                        9829,
+                        31508,
+                        9831,
+                        51075,
+                        22128
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 100000.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1089.8751220703125,
+                            "y": 171.81600952148438
+                        },
+                        {
+                            "x": 1045.7515869140625,
+                            "y": 209.1318359375
+                        },
+                        {
+                            "x": 1006.8779296875,
+                            "y": 224.52728271484375
+                        },
+                        {
+                            "x": 979.3087158203125,
+                            "y": 255.0211181640625
+                        },
+                        {
+                            "x": 946.7044677734375,
+                            "y": 238.08493041992188
+                        },
+                        {
+                            "x": 917.039794921875,
+                            "y": 214.48765563964844
+                        },
+                        {
+                            "x": 900.0498046875,
+                            "y": 205.97511291503906
+                        },
+                        {
+                            "x": 849.1139526367188,
+                            "y": 213.6852569580078
+                        },
+                        {
+                            "x": 785.1066284179688,
+                            "y": 213.8292236328125
+                        },
+                        {
+                            "x": 727.4088134765625,
+                            "y": 223.05747985839844
+                        },
+                        {
+                            "x": 689.37646484375,
+                            "y": 252.0613250732422
+                        },
+                        {
+                            "x": 698.0323486328125,
+                            "y": 269.6689453125
+                        },
+                        {
+                            "x": 753.6862182617188,
+                            "y": 260.0382385253906
+                        },
+                        {
+                            "x": 800.0406494140625,
+                            "y": 237.0413055419922
+                        },
+                        {
+                            "x": 820.0153198242188,
+                            "y": 249.833984375
+                        },
+                        {
+                            "x": 800.7918090820313,
+                            "y": 270.77239990234375
+                        },
+                        {
+                            "x": 768.1262817382813,
+                            "y": 297.99322509765625
+                        },
+                        {
+                            "x": 744.8950805664063,
+                            "y": 308.57525634765625
+                        },
+                        {
+                            "x": 782.2678833007813,
+                            "y": 337.3293151855469
+                        },
+                        {
+                            "x": 805.8020629882813,
+                            "y": 333.70587158203125
+                        },
+                        {
+                            "x": 833.306640625,
+                            "y": 358.8948059082031
+                        },
+                        {
+                            "x": 847.08935546875,
+                            "y": 348.1990051269531
+                        },
+                        {
+                            "x": 859.1500854492188,
+                            "y": 358.34124755859375
+                        },
+                        {
+                            "x": 892.3018188476563,
+                            "y": 389.19842529296875
+                        },
+                        {
+                            "x": 978.7947387695313,
+                            "y": 304.2869567871094
+                        },
+                        {
+                            "x": 1018.48193359375,
+                            "y": 315.65203857421875
+                        },
+                        {
+                            "x": 1037.7694091796875,
+                            "y": 416.19970703125
+                        },
+                        {
+                            "x": 1095.6025390625,
+                            "y": 465.33770751953125
+                        },
+                        {
+                            "x": 1212.4976806640625,
+                            "y": 383.04266357421875
+                        },
+                        {
+                            "x": 1239.8751220703125,
+                            "y": 341.81610107421875
+                        },
+                        {
+                            "x": 1222.25634765625,
+                            "y": 221.39364624023438
+                        },
+                        {
+                            "x": 1141.586181640625,
+                            "y": 185.0989532470703
+                        },
+                        {
+                            "x": 1100.7298583984375,
+                            "y": 183.8292694091797
+                        },
+                        {
+                            "x": 1101.2105712890625,
+                            "y": 223.46694946289063
+                        },
+                        {
+                            "x": 1063.335205078125,
+                            "y": 228.48207092285156
+                        },
+                        {
+                            "x": 1000.9298706054688,
+                            "y": 276.7982482910156
+                        },
+                        {
+                            "x": 932.3709106445313,
+                            "y": 276.807373046875
+                        },
+                        {
+                            "x": 897.7366333007813,
+                            "y": 244.6917724609375
+                        },
+                        {
+                            "x": 865.8958740234375,
+                            "y": 244.36293029785156
+                        },
+                        {
+                            "x": 814.7261962890625,
+                            "y": 321.70953369140625
+                        },
+                        {
+                            "x": 864.12890625,
+                            "y": 332.1772155761719
+                        },
+                        {
+                            "x": 891.5059814453125,
+                            "y": 350.3241271972656
+                        },
+                        {
+                            "x": 934.02197265625,
+                            "y": 310.100341796875
+                        },
+                        {
+                            "x": 901.4000244140625,
+                            "y": 282.9800109863281
+                        },
+                        {
+                            "x": 863.9517211914063,
+                            "y": 305.1360778808594
+                        },
+                        {
+                            "x": 935.2779541015625,
+                            "y": 309.5799865722656
+                        },
+                        {
+                            "x": 1033.3984375,
+                            "y": 298.387939453125
+                        },
+                        {
+                            "x": 1078.378662109375,
+                            "y": 260.5703430175781
+                        },
+                        {
+                            "x": 1129.4417724609375,
+                            "y": 219.4324951171875
+                        },
+                        {
+                            "x": 1160.8253173828125,
+                            "y": 230.98529052734375
+                        },
+                        {
+                            "x": 1185.541748046875,
+                            "y": 252.21739196777344
+                        },
+                        {
+                            "x": 1184.1656494140625,
+                            "y": 310.40264892578125
+                        },
+                        {
+                            "x": 1201.123779296875,
+                            "y": 347.2257080078125
+                        },
+                        {
+                            "x": 1117.9564208984375,
+                            "y": 424.29376220703125
+                        },
+                        {
+                            "x": 1071.697021484375,
+                            "y": 390.5876159667969
+                        },
+                        {
+                            "x": 1068.5889892578125,
+                            "y": 337.1373291015625
+                        },
+                        {
+                            "x": 1055.5457763671875,
+                            "y": 318.5271911621094
+                        },
+                        {
+                            "x": 1147.2027587890625,
+                            "y": 264.2801513671875
+                        },
+                        {
+                            "x": 1156.4884033203125,
+                            "y": 300.1213684082031
+                        },
+                        {
+                            "x": 1108.6605224609375,
+                            "y": 379.5387878417969
+                        },
+                        {
+                            "x": 1093.479736328125,
+                            "y": 356.7169189453125
+                        },
+                        {
+                            "x": 1110.0159912109375,
+                            "y": 314.549560546875
+                        },
+                        {
+                            "x": 1139.3404541015625,
+                            "y": 255.8090362548828
+                        },
+                        {
+                            "x": 1097.7552490234375,
+                            "y": 178.14840698242188
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 4.0,
+                    "point": {
+                        "x": 163.21728515625,
+                        "y": 127.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "ActivateGreenPortal",
+            "nextStateName": "LimozFightStart",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 46805,
+                    "objectToEnter": [
+                        46805
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45424,
+                    "objectToTarget": [
+                        45424
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 128.89633178710938,
+                            "y": 124.87097930908203
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 0.5,
+                    "point": {
+                        "x": 133.5,
+                        "y": 127.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "LimozFightStart",
+            "nextStateName": "ActivateRedPortal",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45667,
+                    "objectToTarget": [
+                        45667
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 50.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45605,
+                    "objectToEnter": [
+                        45605
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 170.4295654296875,
+                            "y": 120.55245971679688
+                        },
+                        {
+                            "x": 183.88282775878906,
+                            "y": 121.26287078857422
+                        },
+                        {
+                            "x": 180.9165802001953,
+                            "y": 134.8406524658203
+                        },
+                        {
+                            "x": 168.78717041015625,
+                            "y": 133.3903045654297
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 3.0,
+                    "point": {
+                        "x": 128.5,
+                        "y": 162.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "ActivatePurplePortal",
+            "nextStateName": "FeargusFightSart",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45593,
+                    "objectToTarget": [
+                        45495,
+                        45609,
+                        45496,
+                        45593,
+                        45494
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45423,
+                    "objectToTarget": [
+                        45423
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 46804,
+                    "objectToEnter": [
+                        46804
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 128.36126708984375,
+                            "y": 135.7002410888672
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 1.0,
+                    "point": {
+                        "x": 128.63262939453125,
+                        "y": 132.65904235839844
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "FeargusFightSart",
+            "nextStateName": "ActivateGreenPortal",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45604,
+                    "objectToEnter": [
+                        45604
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45428,
+                    "objectToTarget": [
+                        45428
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 0,
+                    "objectToTarget": [],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 128.57276916503906,
+                            "y": 179.77508544921875
+                        },
+                        {
+                            "x": 122.72447967529297,
+                            "y": 173.59042358398438
+                        },
+                        {
+                            "x": 128.64524841308594,
+                            "y": 170.30999755859375
+                        },
+                        {
+                            "x": 134.4639434814453,
+                            "y": 173.68423461914063
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 4.0,
+                    "point": {
+                        "x": 93.79679870605469,
+                        "y": 127.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "ActivateRedPortal",
+            "nextStateName": "PyyrFightStart",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45609,
+                    "objectToTarget": [
+                        45593,
+                        45496,
+                        45609,
+                        45494,
+                        45495
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45425,
+                    "objectToTarget": [
+                        45425
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 46806,
+                    "objectToEnter": [
+                        46806
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 0.5,
+                    "point": {
+                        "x": 123.5,
+                        "y": 127.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "PyyrFightStart",
+            "nextStateName": "ActivateBluePortal",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45438,
+                    "objectToTarget": [
+                        45438,
+                        45430
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 8.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45606,
+                    "objectToEnter": [
+                        45606
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 81.78160858154297,
+                            "y": 117.23999786376953
+                        },
+                        {
+                            "x": 72.29370880126953,
+                            "y": 127.18502807617188
+                        },
+                        {
+                            "x": 81.0009994506836,
+                            "y": 137.19000244140625
+                        },
+                        {
+                            "x": 90.90817260742188,
+                            "y": 127.0009994506836
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 5.0,
+                    "point": {
+                        "x": 129.572265625,
+                        "y": 93.49388885498047
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "ActivateBluePortal",
+            "nextStateName": "NikaoFightStart",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 1,
+                    "objectToTarget": [
+                        1
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45426,
+                    "objectToTarget": [
+                        45426
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 46807,
+                    "objectToEnter": [
+                        46807
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 1.0,
+                    "point": {
+                        "x": 128.5,
+                        "y": 122.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "NikaoFightStart",
+            "nextStateName": "IvoryWyvern",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 0,
+                    "objectToTarget": [],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 30.0,
+                    "ruleType": 0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45607,
+                    "objectToEnter": [
+                        45607
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 120.09138488769531,
+                            "y": 90.2665023803711
+                        },
+                        {
+                            "x": 121.12950897216797,
+                            "y": 73.93665313720703
+                        },
+                        {
+                            "x": 136.03382873535156,
+                            "y": 74.02034759521484
+                        },
+                        {
+                            "x": 135.79608154296875,
+                            "y": 88.76728820800781
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "name": "IvoryWyvern",
+            "nextStateName": "Loot",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 0,
+                    "objectToTarget": [],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 128.50758361816406,
+                            "y": 120.76543426513672
+                        },
+                        {
+                            "x": 134.38462829589844,
+                            "y": 127.46963500976563
+                        },
+                        {
+                            "x": 128.52236938476563,
+                            "y": 132.89979553222656
+                        },
+                        {
+                            "x": 121.96980285644531,
+                            "y": 127.6144790649414
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": false
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Oryx's Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Chillin",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        true,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "IceCave",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 29837,
+                    "objectToEnter": [
+                        29837
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 3672,
+                    "objectToTarget": [
+                        3672,
+                        3675,
+                        8231,
+                        8707,
+                        3673,
+                        3674
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 500.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1.0,
+                            "y": 1.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "InnerSanc",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 1888,
+                    "objectToTarget": [
+                        1888,
+                        1890,
+                        1891
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 1887,
+                    "objectToTarget": [
+                        1887
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29773,
+                    "objectToTarget": [
+                        29773,
+                        18376,
+                        18378,
+                        18377
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 8.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Deadwater Docks",
+            "nextStateName": "Exit",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 47387,
+                    "objectToTarget": [
+                        2352,
+                        17410,
+                        28796,
+                        47387
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Library",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 43934,
+                    "objectToTarget": [
+                        43923,
+                        43934
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 3.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 43934,
+                    "objectToTarget": [
+                        43934
+                    ],
+                    "offsetFromEnemy": 0.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 100000.0,
+                    "ruleType": 0
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Mountain Temple",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 43681,
+                    "objectToTarget": [
+                        43681,
+                        17422,
+                        43696,
+                        43698,
+                        43701,
+                        17415,
+                        17416,
+                        43700
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 2.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Loot",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": false
+        }
+    ]
+}

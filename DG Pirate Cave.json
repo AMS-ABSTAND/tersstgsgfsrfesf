@@ -1,0 +1,684 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Pirate Cave": "Pirate Cave",
+        "Realm of the Mad God": "Proceed to Beach 1"
+    },
+    "name": "DG Pirate Cave",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 605.5,
+                        "y": 1446.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Beach 1",
+            "nextStateName": "Search Beach 1",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 605.5,
+                        "y": 1446.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 605.5,
+                            "y": 1446.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 628.423279,
+                        "y": 1446.423828
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Beach 1",
+            "nextStateName": "Proceed to Beach 2",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1885,
+                    "objectToEnter": [
+                        1815
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 1732,
+                    "objectToTarget": [
+                        1732,
+                        5721,
+                        21768,
+                        21769,
+                        1735,
+                        1562,
+                        21807,
+                        1733,
+                        32546,
+                        21808,
+                        21767,
+                        1549,
+                        1559,
+                        5718,
+                        21790,
+                        21793,
+                        1556,
+                        21783,
+                        1555,
+                        21782
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 605.5,
+                            "y": 1454.432373
+                        },
+                        {
+                            "x": 584.629578,
+                            "y": 1452.759766
+                        },
+                        {
+                            "x": 588.455811,
+                            "y": 1438.494385
+                        },
+                        {
+                            "x": 609.132568,
+                            "y": 1428.447021
+                        },
+                        {
+                            "x": 614.144287,
+                            "y": 1412.188354
+                        },
+                        {
+                            "x": 611.642517,
+                            "y": 1389.706055
+                        },
+                        {
+                            "x": 608.402527,
+                            "y": 1370.024658
+                        },
+                        {
+                            "x": 614.266602,
+                            "y": 1350.246704
+                        },
+                        {
+                            "x": 615.30011,
+                            "y": 1322.967407
+                        },
+                        {
+                            "x": 609.55835,
+                            "y": 1304.761597
+                        },
+                        {
+                            "x": 603.964233,
+                            "y": 1281.9021
+                        },
+                        {
+                            "x": 594.843018,
+                            "y": 1257.60437
+                        },
+                        {
+                            "x": 571.812134,
+                            "y": 1245.424438
+                        },
+                        {
+                            "x": 551.125916,
+                            "y": 1228.085449
+                        },
+                        {
+                            "x": 531.99762,
+                            "y": 1208.964233
+                        },
+                        {
+                            "x": 517.134644,
+                            "y": 1191.613892
+                        },
+                        {
+                            "x": 532.000793,
+                            "y": 1178.214233
+                        },
+                        {
+                            "x": 549.226074,
+                            "y": 1195.433228
+                        },
+                        {
+                            "x": 569.09259,
+                            "y": 1215.292358
+                        },
+                        {
+                            "x": 593.675598,
+                            "y": 1229.255737
+                        },
+                        {
+                            "x": 613.921448,
+                            "y": 1248.647583
+                        },
+                        {
+                            "x": 625.454529,
+                            "y": 1273.709229
+                        },
+                        {
+                            "x": 629.050964,
+                            "y": 1297.483276
+                        },
+                        {
+                            "x": 637.598206,
+                            "y": 1329.608276
+                        },
+                        {
+                            "x": 637.598206,
+                            "y": 1360.386597
+                        },
+                        {
+                            "x": 638.151123,
+                            "y": 1394.495728
+                        },
+                        {
+                            "x": 639.184631,
+                            "y": 1428.394043
+                        },
+                        {
+                            "x": 628.423279,
+                            "y": 1446.423828
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 686.5,
+                        "y": 1758.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Proceed to Beach 2",
+            "nextStateName": "Search Beach 2",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 686.5,
+                        "y": 1758.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 686.5,
+                            "y": 1758.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 891.292664,
+                        "y": 1808.428467
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Search Beach 2",
+            "nextStateName": "Proceed to Beach 1",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1885,
+                    "objectToEnter": [
+                        1815
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 1732,
+                    "objectToTarget": [
+                        1732,
+                        5721,
+                        21768,
+                        21769,
+                        1735,
+                        1562,
+                        21807,
+                        1733,
+                        32546,
+                        21808,
+                        21767,
+                        1549,
+                        1559,
+                        5718,
+                        21790,
+                        21793,
+                        1556,
+                        21783,
+                        1555,
+                        21782
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 676.773743,
+                            "y": 1721.48938
+                        },
+                        {
+                            "x": 657.497803,
+                            "y": 1699.739136
+                        },
+                        {
+                            "x": 635.900452,
+                            "y": 1674.195801
+                        },
+                        {
+                            "x": 637.655823,
+                            "y": 1651.191284
+                        },
+                        {
+                            "x": 660.411926,
+                            "y": 1661.473145
+                        },
+                        {
+                            "x": 677.751343,
+                            "y": 1678.389038
+                        },
+                        {
+                            "x": 691.033142,
+                            "y": 1695.423218
+                        },
+                        {
+                            "x": 705.65564,
+                            "y": 1711.07312
+                        },
+                        {
+                            "x": 712.439087,
+                            "y": 1736.719971
+                        },
+                        {
+                            "x": 724.348389,
+                            "y": 1755.919189
+                        },
+                        {
+                            "x": 729.524109,
+                            "y": 1790.815674
+                        },
+                        {
+                            "x": 756.253601,
+                            "y": 1772.980347
+                        },
+                        {
+                            "x": 767.09021,
+                            "y": 1807.55542
+                        },
+                        {
+                            "x": 794.424561,
+                            "y": 1793.149048
+                        },
+                        {
+                            "x": 793.391052,
+                            "y": 1828.079834
+                        },
+                        {
+                            "x": 816.295166,
+                            "y": 1816.441895
+                        },
+                        {
+                            "x": 821.011597,
+                            "y": 1843.631226
+                        },
+                        {
+                            "x": 845.465698,
+                            "y": 1823.337891
+                        },
+                        {
+                            "x": 847.758545,
+                            "y": 1858.151001
+                        },
+                        {
+                            "x": 869.89093,
+                            "y": 1840.792725
+                        },
+                        {
+                            "x": 885.032043,
+                            "y": 1878.61145
+                        },
+                        {
+                            "x": 901.283081,
+                            "y": 1858.817749
+                        },
+                        {
+                            "x": 914.882385,
+                            "y": 1902.853394
+                        },
+                        {
+                            "x": 940.143677,
+                            "y": 1878.841187
+                        },
+                        {
+                            "x": 945.155396,
+                            "y": 1910.595825
+                        },
+                        {
+                            "x": 967.902466,
+                            "y": 1908.242676
+                        },
+                        {
+                            "x": 989.817322,
+                            "y": 1920.582642
+                        },
+                        {
+                            "x": 1005.493958,
+                            "y": 1904.015747
+                        },
+                        {
+                            "x": 1012.519409,
+                            "y": 1932.678345
+                        },
+                        {
+                            "x": 1036.650635,
+                            "y": 1934.145996
+                        },
+                        {
+                            "x": 1036.36377,
+                            "y": 1895.303955
+                        },
+                        {
+                            "x": 1015.607788,
+                            "y": 1871.431763
+                        },
+                        {
+                            "x": 1047.392456,
+                            "y": 1856.153687
+                        },
+                        {
+                            "x": 1065.504761,
+                            "y": 1830.561401
+                        },
+                        {
+                            "x": 1095.40979,
+                            "y": 1830.800049
+                        },
+                        {
+                            "x": 1109.732788,
+                            "y": 1846.272217
+                        },
+                        {
+                            "x": 1117.816162,
+                            "y": 1858.936279
+                        },
+                        {
+                            "x": 1137.686768,
+                            "y": 1846.863159
+                        },
+                        {
+                            "x": 1140.917236,
+                            "y": 1829.716431
+                        },
+                        {
+                            "x": 1122.308716,
+                            "y": 1832.399414
+                        },
+                        {
+                            "x": 1085.72998,
+                            "y": 1810.374512
+                        },
+                        {
+                            "x": 1077.071655,
+                            "y": 1784.668701
+                        },
+                        {
+                            "x": 1052.480347,
+                            "y": 1800.550659
+                        },
+                        {
+                            "x": 1024.308105,
+                            "y": 1825.394531
+                        },
+                        {
+                            "x": 1005.467041,
+                            "y": 1845.689697
+                        },
+                        {
+                            "x": 992.236328,
+                            "y": 1859.333008
+                        },
+                        {
+                            "x": 989.98999,
+                            "y": 1888.568726
+                        },
+                        {
+                            "x": 963.741577,
+                            "y": 1880.639648
+                        },
+                        {
+                            "x": 966.243347,
+                            "y": 1844.843994
+                        },
+                        {
+                            "x": 943.612488,
+                            "y": 1854.560059
+                        },
+                        {
+                            "x": 918.524536,
+                            "y": 1854.560059
+                        },
+                        {
+                            "x": 939.098755,
+                            "y": 1827.442139
+                        },
+                        {
+                            "x": 911.975159,
+                            "y": 1811.992554
+                        },
+                        {
+                            "x": 898.162842,
+                            "y": 1834.103271
+                        },
+                        {
+                            "x": 877.64386,
+                            "y": 1820.88562
+                        },
+                        {
+                            "x": 855.897339,
+                            "y": 1800.608032
+                        },
+                        {
+                            "x": 817.802673,
+                            "y": 1800.608032
+                        },
+                        {
+                            "x": 815.153259,
+                            "y": 1769.883911
+                        },
+                        {
+                            "x": 838.319275,
+                            "y": 1776.672241
+                        },
+                        {
+                            "x": 861.704163,
+                            "y": 1780.509644
+                        },
+                        {
+                            "x": 891.292664,
+                            "y": 1808.428467
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Pirate Cave",
+            "nextStateName": "Exit",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 2343,
+                    "objectToTarget": [
+                        2343
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "Proceed to Beach 1",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

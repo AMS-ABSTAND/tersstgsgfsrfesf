@@ -1,0 +1,347 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Forbidden Jungle": "Forbidden Jungle",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Castle",
+        "Realm of the Mad God": "RealmTP"
+    },
+    "name": "DG Forbidden Jungle",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 5.0,
+                    "point": {
+                        "x": 860.5,
+                        "y": 1694.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "RealmTP",
+            "nextStateName": "RealmSearch",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 860.5,
+                        "y": 1694.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 860.5,
+                            "y": 1694.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "RealmSearch",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1843,
+                    "objectToEnter": [
+                        1843
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 3522,
+                    "objectToTarget": [
+                        3522,
+                        21946,
+                        52991
+                    ],
+                    "offsetFromEnemy": 1.5,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 15.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 904.0,
+                            "y": 1756.0
+                        },
+                        {
+                            "x": 895.0,
+                            "y": 1722.0
+                        },
+                        {
+                            "x": 881.0,
+                            "y": 1763.0
+                        },
+                        {
+                            "x": 843.0,
+                            "y": 1751.0
+                        },
+                        {
+                            "x": 814.0,
+                            "y": 1737.0
+                        },
+                        {
+                            "x": 788.0,
+                            "y": 1713.0
+                        },
+                        {
+                            "x": 771.0,
+                            "y": 1692.0
+                        },
+                        {
+                            "x": 789.0,
+                            "y": 1670.0
+                        },
+                        {
+                            "x": 831.0,
+                            "y": 1709.0
+                        },
+                        {
+                            "x": 855.0,
+                            "y": 1728.0
+                        },
+                        {
+                            "x": 879.0,
+                            "y": 1738.0
+                        },
+                        {
+                            "x": 893.0,
+                            "y": 1719.0
+                        },
+                        {
+                            "x": 834.0,
+                            "y": 1692.0
+                        },
+                        {
+                            "x": 791.0,
+                            "y": 1666.0
+                        },
+                        {
+                            "x": 769.0,
+                            "y": 1647.0
+                        },
+                        {
+                            "x": 789.0,
+                            "y": 1630.0
+                        },
+                        {
+                            "x": 822.0,
+                            "y": 1657.0
+                        },
+                        {
+                            "x": 853.0,
+                            "y": 1668.0
+                        },
+                        {
+                            "x": 852.0,
+                            "y": 1647.0
+                        },
+                        {
+                            "x": 820.0,
+                            "y": 1611.0
+                        },
+                        {
+                            "x": 845.0,
+                            "y": 1594.0
+                        },
+                        {
+                            "x": 879.0,
+                            "y": 1634.0
+                        },
+                        {
+                            "x": 882.0,
+                            "y": 1677.0
+                        },
+                        {
+                            "x": 910.0,
+                            "y": 1677.0
+                        },
+                        {
+                            "x": 910.0,
+                            "y": 1637.0
+                        },
+                        {
+                            "x": 950.0,
+                            "y": 1670.0
+                        },
+                        {
+                            "x": 936.0,
+                            "y": 1699.0
+                        },
+                        {
+                            "x": 926.0,
+                            "y": 1692.0
+                        },
+                        {
+                            "x": 902.0,
+                            "y": 1713.0
+                        },
+                        {
+                            "x": 948.0,
+                            "y": 1768.0
+                        },
+                        {
+                            "x": 950.0,
+                            "y": 1798.0
+                        },
+                        {
+                            "x": 980.0,
+                            "y": 1801.0
+                        },
+                        {
+                            "x": 973.0,
+                            "y": 1763.0
+                        },
+                        {
+                            "x": 955.0,
+                            "y": 1736.0
+                        },
+                        {
+                            "x": 994.0,
+                            "y": 1737.0
+                        },
+                        {
+                            "x": 1007.0,
+                            "y": 1814.0
+                        },
+                        {
+                            "x": 1044.0,
+                            "y": 1788.0
+                        },
+                        {
+                            "x": 1025.0,
+                            "y": 1754.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Forbidden Jungle",
+            "nextStateName": "Exit",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 3523,
+                    "objectToTarget": [
+                        3523
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 10000.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 5.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1796,
+                    "objectToEnter": [
+                        1796
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Castle",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}

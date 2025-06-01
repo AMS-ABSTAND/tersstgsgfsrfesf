@@ -1,0 +1,662 @@
+{
+    "avoidPlayerState": "",
+    "mapToState": {
+        "Lair of Draconis": "ToBlue",
+        "Nexus": "Nexus",
+        "Oryx's Castle": "Oryx",
+        "Realm of the Mad God": "Realm"
+    },
+    "name": "DG LoD (Blue)",
+    "states": [
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Nexus",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": true,
+                    "objectIdToAdd": 1810,
+                    "objectToEnter": [
+                        1810
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 168.0,
+                            "y": 100.0
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Server Change",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 7,
+                    "serverList": [
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        true,
+                        true,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        true,
+                        false,
+                        false,
+                        false
+                    ]
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 1072.5,
+                        "y": 151.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "Realm",
+            "nextStateName": "Realm Search",
+            "rules": [
+                {
+                    "constantlyTp": false,
+                    "objectToTp": [],
+                    "pointToTp": {
+                        "x": 1072.5,
+                        "y": 151.5
+                    },
+                    "ruleType": 3,
+                    "tpToBoss": false,
+                    "tpToObject": false,
+                    "tpToWantedPosition": false,
+                    "waitTimeSeconds": 0.10000000149011612
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1072.5,
+                            "y": 151.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Realm Search",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45591,
+                    "objectToEnter": [
+                        45591
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [
+                        31508,
+                        16935,
+                        16936,
+                        16937,
+                        16938,
+                        16970,
+                        34518
+                    ],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 29443,
+                    "objectToTarget": [
+                        44337,
+                        29443,
+                        21996,
+                        22146,
+                        21997
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 32.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 1089.8751220703125,
+                            "y": 171.81600952148438
+                        },
+                        {
+                            "x": 1045.7515869140625,
+                            "y": 209.1318359375
+                        },
+                        {
+                            "x": 1006.8779296875,
+                            "y": 224.52728271484375
+                        },
+                        {
+                            "x": 979.3087158203125,
+                            "y": 255.0211181640625
+                        },
+                        {
+                            "x": 946.7044677734375,
+                            "y": 238.08493041992188
+                        },
+                        {
+                            "x": 917.039794921875,
+                            "y": 214.48765563964844
+                        },
+                        {
+                            "x": 900.0498046875,
+                            "y": 205.97511291503906
+                        },
+                        {
+                            "x": 849.1139526367188,
+                            "y": 213.6852569580078
+                        },
+                        {
+                            "x": 785.1066284179688,
+                            "y": 213.8292236328125
+                        },
+                        {
+                            "x": 727.4088134765625,
+                            "y": 223.05747985839844
+                        },
+                        {
+                            "x": 689.37646484375,
+                            "y": 252.0613250732422
+                        },
+                        {
+                            "x": 698.0323486328125,
+                            "y": 269.6689453125
+                        },
+                        {
+                            "x": 753.6862182617188,
+                            "y": 260.0382385253906
+                        },
+                        {
+                            "x": 800.0406494140625,
+                            "y": 237.0413055419922
+                        },
+                        {
+                            "x": 820.0153198242188,
+                            "y": 249.833984375
+                        },
+                        {
+                            "x": 800.7918090820313,
+                            "y": 270.77239990234375
+                        },
+                        {
+                            "x": 768.1262817382813,
+                            "y": 297.99322509765625
+                        },
+                        {
+                            "x": 744.8950805664063,
+                            "y": 308.57525634765625
+                        },
+                        {
+                            "x": 782.2678833007813,
+                            "y": 337.3293151855469
+                        },
+                        {
+                            "x": 805.8020629882813,
+                            "y": 333.70587158203125
+                        },
+                        {
+                            "x": 833.306640625,
+                            "y": 358.8948059082031
+                        },
+                        {
+                            "x": 847.08935546875,
+                            "y": 348.1990051269531
+                        },
+                        {
+                            "x": 859.1500854492188,
+                            "y": 358.34124755859375
+                        },
+                        {
+                            "x": 892.3018188476563,
+                            "y": 389.19842529296875
+                        },
+                        {
+                            "x": 978.7947387695313,
+                            "y": 304.2869567871094
+                        },
+                        {
+                            "x": 1018.48193359375,
+                            "y": 315.65203857421875
+                        },
+                        {
+                            "x": 1037.7694091796875,
+                            "y": 416.19970703125
+                        },
+                        {
+                            "x": 1095.6025390625,
+                            "y": 465.33770751953125
+                        },
+                        {
+                            "x": 1212.4976806640625,
+                            "y": 383.04266357421875
+                        },
+                        {
+                            "x": 1239.8751220703125,
+                            "y": 341.81610107421875
+                        },
+                        {
+                            "x": 1222.25634765625,
+                            "y": 221.39364624023438
+                        },
+                        {
+                            "x": 1141.586181640625,
+                            "y": 185.0989532470703
+                        },
+                        {
+                            "x": 1100.7298583984375,
+                            "y": 183.8292694091797
+                        },
+                        {
+                            "x": 1101.2105712890625,
+                            "y": 223.46694946289063
+                        },
+                        {
+                            "x": 1063.335205078125,
+                            "y": 228.48207092285156
+                        },
+                        {
+                            "x": 1000.9298706054688,
+                            "y": 276.7982482910156
+                        },
+                        {
+                            "x": 932.3709106445313,
+                            "y": 276.807373046875
+                        },
+                        {
+                            "x": 897.7366333007813,
+                            "y": 244.6917724609375
+                        },
+                        {
+                            "x": 865.8958740234375,
+                            "y": 244.36293029785156
+                        },
+                        {
+                            "x": 814.7261962890625,
+                            "y": 321.70953369140625
+                        },
+                        {
+                            "x": 864.12890625,
+                            "y": 332.1772155761719
+                        },
+                        {
+                            "x": 891.5059814453125,
+                            "y": 350.3241271972656
+                        },
+                        {
+                            "x": 934.02197265625,
+                            "y": 310.100341796875
+                        },
+                        {
+                            "x": 901.4000244140625,
+                            "y": 282.9800109863281
+                        },
+                        {
+                            "x": 863.9517211914063,
+                            "y": 305.1360778808594
+                        },
+                        {
+                            "x": 935.2779541015625,
+                            "y": 309.5799865722656
+                        },
+                        {
+                            "x": 1033.3984375,
+                            "y": 298.387939453125
+                        },
+                        {
+                            "x": 1078.378662109375,
+                            "y": 260.5703430175781
+                        },
+                        {
+                            "x": 1129.4417724609375,
+                            "y": 219.4324951171875
+                        },
+                        {
+                            "x": 1160.8253173828125,
+                            "y": 230.98529052734375
+                        },
+                        {
+                            "x": 1185.541748046875,
+                            "y": 252.21739196777344
+                        },
+                        {
+                            "x": 1184.1656494140625,
+                            "y": 310.40264892578125
+                        },
+                        {
+                            "x": 1201.123779296875,
+                            "y": 347.2257080078125
+                        },
+                        {
+                            "x": 1117.9564208984375,
+                            "y": 424.29376220703125
+                        },
+                        {
+                            "x": 1071.697021484375,
+                            "y": 390.5876159667969
+                        },
+                        {
+                            "x": 1068.5889892578125,
+                            "y": 337.1373291015625
+                        },
+                        {
+                            "x": 1055.5457763671875,
+                            "y": 318.5271911621094
+                        },
+                        {
+                            "x": 1147.2027587890625,
+                            "y": 264.2801513671875
+                        },
+                        {
+                            "x": 1156.4884033203125,
+                            "y": 300.1213684082031
+                        },
+                        {
+                            "x": 1108.6605224609375,
+                            "y": 379.5387878417969
+                        },
+                        {
+                            "x": 1093.479736328125,
+                            "y": 356.7169189453125
+                        },
+                        {
+                            "x": 1110.0159912109375,
+                            "y": 314.549560546875
+                        },
+                        {
+                            "x": 1139.3404541015625,
+                            "y": 255.8090362548828
+                        },
+                        {
+                            "x": 1097.7552490234375,
+                            "y": 178.14840698242188
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 10.0,
+                    "point": {
+                        "x": 128.5,
+                        "y": 93.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "ToBlue",
+            "nextStateName": "Blue",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 46807,
+                    "objectToEnter": [
+                        46807
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [
+                        45423,
+                        45425,
+                        45424
+                    ],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45426,
+                    "objectToTarget": [
+                        45426
+                    ],
+                    "offsetFromEnemy": 0.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                },
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 3.0
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45441,
+                    "objectToTarget": [
+                        45441,
+                        45442
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                }
+            ],
+            "name": "Blue",
+            "nextStateName": "BlueMinionPhase",
+            "rules": [
+                {
+                    "exclusionObjects": [
+                        45441,
+                        45442
+                    ],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45429,
+                    "objectToTarget": [
+                        45429
+                    ],
+                    "offsetFromEnemy": 4.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45429,
+                    "objectToTarget": [
+                        45429
+                    ],
+                    "offsetFromEnemy": 3.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                }
+            ],
+            "name": "BlueMinionPhase",
+            "nextStateName": "BluePostMinionPhase",
+            "rules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": true,
+                    "objectIdToAdd": 45441,
+                    "objectToTarget": [
+                        45441,
+                        45442
+                    ],
+                    "offsetFromEnemy": 2.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 16.0,
+                    "ruleType": 0
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": [
+                {
+                    "distanceOption": 1,
+                    "distanceToPoint": 6.0,
+                    "point": {
+                        "x": 128.5,
+                        "y": 122.5
+                    },
+                    "ruleType": 4
+                }
+            ],
+            "name": "BluePostMinionPhase",
+            "nextStateName": "WaitForBlueFlame",
+            "rules": [
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 45607,
+                    "objectToEnter": [
+                        45607
+                    ],
+                    "ruleType": 1
+                },
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45429,
+                    "objectToTarget": [
+                        45429,
+                        45441,
+                        45442
+                    ],
+                    "offsetFromEnemy": 2.299999952316284,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 1000.0,
+                    "ruleType": 0
+                },
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 137.10000610351563,
+                            "y": 89.21563720703125
+                        },
+                        {
+                            "x": 136.5685577392578,
+                            "y": 73.28475952148438
+                        },
+                        {
+                            "x": 120.4676742553711,
+                            "y": 73.28475952148438
+                        },
+                        {
+                            "x": 120.83999633789063,
+                            "y": 90.2393798828125
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": true,
+            "exitRules": [
+                {
+                    "exclusionObjects": [],
+                    "ignoreInvulnerable": false,
+                    "objectIdToAdd": 45429,
+                    "objectToTarget": [],
+                    "offsetFromEnemy": 4.0,
+                    "proritiseHealth": false,
+                    "rangeToCheck": 32.0,
+                    "ruleType": 0
+                }
+            ],
+            "name": "WaitForBlueFlame",
+            "nextStateName": "Leave",
+            "rules": [
+                {
+                    "distanceToSwitchPoint": 0.25,
+                    "points": [
+                        {
+                            "x": 131.5,
+                            "y": 122.5
+                        }
+                    ],
+                    "ruleType": 2
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Leave",
+            "nextStateName": "",
+            "rules": [
+                {
+                    "ruleType": 6,
+                    "timeToWaitInSecs": 3.0
+                },
+                {
+                    "enterBetaRealm": false,
+                    "objectIdToAdd": 1795,
+                    "objectToEnter": [
+                        1795
+                    ],
+                    "ruleType": 1
+                }
+            ],
+            "usePathFinder": true
+        },
+        {
+            "exitRuleIfNot": false,
+            "exitRules": null,
+            "name": "Oryx",
+            "nextStateName": "Oryx",
+            "rules": [
+                {
+                    "ruleType": 5
+                }
+            ],
+            "usePathFinder": true
+        }
+    ]
+}
